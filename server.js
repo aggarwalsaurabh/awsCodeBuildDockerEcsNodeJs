@@ -12,7 +12,7 @@ const app = express();
 app.get('/', (req, res) => {
   
   logger.info(`Request requested at`);
-  res.send('Hello World V3');
+  res.send(process.env);
   //res.send(JSON.stringify(process.env.PATH, null, 2));
 });
 

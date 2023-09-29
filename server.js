@@ -23,7 +23,7 @@ app.get('/exc', (req, res) => {
 } catch (err){
     console.log(err);
 }
-  res.send('Hello Exception');
+  res.send(process.env);
   //res.send(JSON.stringify(process.env.PATH, null, 2));
 });
 

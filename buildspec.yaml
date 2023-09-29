@@ -12,6 +12,7 @@ phases:
   post_build:
     commands:
       - docker push 008956391065.dkr.ecr.us-east-1.amazonaws.com/nodejsdemo:latest
-#      - printf '[{"name":"nodejsdemo","imageUri":"008956391065.dkr.ecr.us-east-1.amazonaws.com/nodejsdemo:latest"}]' > imagedefinitions.json
-#artifacts:
-#    files: imagedefinitions.json
+      - printf '[{"name":"nodejsdemo","imageUri":"008956391065.dkr.ecr.us-east-1.amazonaws.com/nodejsdemo:latest"}]' > imagedefinitions.json
+artifacts:
+    files: 
+      - 'imagedefinitions.json'
